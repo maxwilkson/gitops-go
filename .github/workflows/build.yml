@@ -44,4 +44,5 @@ jobs:
       - name: Push
         uses: ad-m/github-push-action@master
         with:
+          github.token: ${{ github.token }}
           repository: maxwilkson/gitops-go
