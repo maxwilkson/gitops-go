@@ -10,7 +10,8 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    permissions: write
+    permissions:
+      actions: read | write
     
     steps:
       - name: Checkout code
