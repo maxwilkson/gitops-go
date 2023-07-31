@@ -1,8 +1,10 @@
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 images:
-  - name: goserver
-    newName: maxwilkson/gitops-go
-    newTag: latest
+- name: goserver
+  newName: maxwilkson/gitops-go
+  newTag: c82ef7fc79a7114c5711cd119b62ea550dc668fe
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
